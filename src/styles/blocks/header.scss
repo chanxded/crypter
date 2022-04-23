@@ -1,0 +1,140 @@
+.header {
+  padding: 24px 0;
+  border: 1px solid $color-black-100;
+
+  &__wrap {
+    @extend .container !optional;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__search-input-wrap{
+    position: relative;
+    &:after{
+      content:'';
+      display: block;
+      width: 16px;
+      height: 16px;
+      background-image: url(/src/image/Shape.svg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%);
+    }
+  }
+
+  &__search-input {
+    min-width: 250px;
+  }
+  &__logo {
+    margin-right: 32px;
+  }
+
+  &__menu {
+    border-left: 2px solid #E6E8EC;
+  }
+
+  &__menu-list {
+     display: flex;
+     justify-content: space-between;
+  }
+
+   &__menu-item {
+     list-style-type:none;
+   }
+
+  &__right {
+    display:flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    display:flex;
+    justify-content: space-between;
+  }
+
+  &__logo-image {
+    width: 32px;
+    object-fit: cover;
+  }
+  &__title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+    margin-left: 8px;
+  }
+  &__menu-item{
+    margin-right: 32px;
+    font-weight: 700;
+    font-size: 14px;
+    font-family: 'DM Sans', sans-serif;
+    color: $color-black-70;
+
+  }
+  &__menu-link{
+    font-weight: 700;
+    font-size: 14px;
+    font-family: 'DM Sans', sans-serif;
+    color: #23262F;
+    text-decoration: none;
+    line-height: 16px;
+  }
+
+  &__search-input{
+    padding: 10px;
+    font-size: 12px;
+    border-radius: 8px;
+    border: 2px solid #E6E8EC;
+    line-height: 20px;
+  }
+  &__actions{
+    display: flex;
+  }
+  &__link{
+    margin-left: 12px;
+  }
+
+  &__notification {
+    -webkit-appearance: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 0 24px;
+    background-image: url(/src/image/notify.svg);
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+    background-position: center;
+    position: relative;
+
+    &--has-notification {
+      &:after {
+          content: '';
+          position: absolute;
+          top: 0;
+          right: 0;
+          display: block;
+          width: 12px;
+          height: 12px;
+          border-radius: 120px;
+          background-color: #45B26B;
+      }
+    }
+  }
+}
+
+
+
+
