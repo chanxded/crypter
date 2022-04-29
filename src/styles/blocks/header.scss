@@ -1,6 +1,6 @@
 .header {
   padding: 24px 0;
-  border: 1px solid $color-black-100;
+  background: $color-grey-30;
 
   &__wrap {
     @extend .container !optional;
@@ -94,7 +94,7 @@
     padding: 10px;
     font-size: 12px;
     border-radius: 8px;
-    border: 2px solid #E6E8EC;
+    border: 2px solid $color-grey-10;
     line-height: 20px;
   }
   &__actions{

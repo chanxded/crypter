@@ -1,6 +1,6 @@
 .hero {
-
-  margin-top: 128px;
+  padding-top: 128px;
+  background: #FCFCFD;
 
   &__wrap {
     @extend .container !optional;

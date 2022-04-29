@@ -1,7 +1,8 @@
 .future {
 
-  margin-top: 136px;
-  margin-bottom: 128px;
+  padding-top: 136px;
+  padding-bottom: 128px;
+  background: #FCFCFD;
   &__wrap {
     @extend .container !optional;
     display: flex;

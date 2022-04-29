@@ -1,5 +1,6 @@
 .promo{
-  margin-top: 128px;
+  padding-top: 128px;
+  background: $color-grey-30;
    &__wrap {
     @extend .container !optional;
     display: flex;

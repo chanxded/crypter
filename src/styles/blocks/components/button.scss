@@ -9,6 +9,7 @@
   font-weight: 700;
   font-family: 'DM Sans', sans-serif;
   cursor: pointer;
+  transition: all 500ms;
 
 
   &--blue {
@@ -26,7 +27,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: 14px;
-    border: 2px solid #fff;
+    border: 2px solid #fff0;
     border-radius: 40px;
   }
   &--arrow-right{
@@ -42,6 +43,7 @@
     border: 2px solid #E6E8EC;
     border-radius: 40px;
   }
+
 }
 .button:hover{
     background: #3772FF;
